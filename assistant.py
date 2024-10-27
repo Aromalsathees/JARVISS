@@ -10,7 +10,7 @@ import speech_recognition as sr
 from datetime import datetime  
 
 AI_NAME = 'Jarvis'
-USER_NAME = "Joel Thomas"
+USER_NAME = "s"
 
 load_dotenv()
 
@@ -156,6 +156,7 @@ while True:
         web_cam_capture()
         vision_context = vision_prompt(prompt=prompt, photo_path='webcam.jpg')
     elif 'extract clipboard' in call:
+
         print('Checking clipboard...')
         paste = get_clipboard_text()
         if paste:
